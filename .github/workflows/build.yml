@@ -3,7 +3,7 @@ name: build
 on:
   push:
     branches: [main]
-    
+
 permissions:
   contents: read
   pages: write
@@ -38,7 +38,7 @@ jobs:
       - name: Upload
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist/jonesborough
+          path: ./dist/jonesborough/browser
 
   deploy:
     environment:
