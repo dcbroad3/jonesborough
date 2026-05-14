@@ -9,4 +9,9 @@ import { Component } from '@angular/core';
     class: 'w-dvw h-dvh flex flex-col items-center justify-center bg-orange-400 gap-4 text-center',
   },
 })
-export class App {}
+export class App {
+  result = 1;
+  test(): void {
+    this.result++;
+  }
+}
